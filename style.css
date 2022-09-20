@@ -1,0 +1,147 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 ;
+    padding: 15px 0;
+    background-color: var(--Cream);
+}
+
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+
+.container{
+    width:400px;
+    margin: 0 auto;
+    background-color:var(--White);
+    border-radius: 10px;
+}
+
+.image{
+    background:url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   height:18em;
+   border-radius: 10px 10px 0px 0px;
+}
+
+.content{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+}
+
+h1{
+    font-size: 16px;
+    font-weight:700;
+    letter-spacing:5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    font-size: 38px;
+    font-weight: 900;
+    width: 100%;
+    max-width: 350px;
+    font-family: 'Fraunces', serif;
+}
+
+.detail{
+    width: 100%;
+    font-size: 16px;
+    max-width: 300px;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+.price{
+    font-family: 'Fraunces', serif;
+}
+.current{
+    font-size: 45px;
+    width: fit-content;
+    margin:0;
+    color: var(--Dark-cyan);
+}
+.old{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color:var(--Dark-grayish-blue);
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+.btn{
+    background-color: var(--Dark-cyan);
+    margin-top: 1.5rem;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.btn:hover{
+    background-color:rgb(17, 58, 46);
+}
+.identity{
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+.identity a{
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen and (min-width:1000px) {
+    body{
+        padding: 100px 0;
+    }
+     .container{
+        width:700px;
+        display: flex;
+        flex-direction:row;
+
+     }   
+
+     .image{
+        background: url(./images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 400px;
+        height:auto;
+        border-radius: 10px 0px 0px 10px;
+     }
+
+     .content{
+        width:350px;
+        padding:2rem;
+     }
+
+     .current{
+        font-size: 40px;
+     }
+     .btn{
+        background-color: var(--Dark-cyan);
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        font-size: 20px;
+        border-radius: 10px;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+    }
+}
