@@ -43,6 +43,7 @@ h1{
     font-size: 16px;
     font-weight:700;
     letter-spacing:5px;
+    color:var(--Dark-grayish-blue);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,6 +52,7 @@ h2{
     font-weight: 900;
     width: 100%;
     max-width: 350px;
+    color: var(--Very-dark-blue);
     font-family: 'Fraunces', serif;
 }
 
@@ -74,12 +76,15 @@ h2{
 }
 .old{
     font-size: 25px;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
     color:var(--Dark-grayish-blue);
 }
 
 a{
     text-decoration: none;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
    
 }
 
